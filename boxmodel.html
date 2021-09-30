@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box { /*block*/
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            padding: 1px;
+            margin: 10px 1px 5px 5px;/*12 시 부터 시계방향*/
+        }
+        .span-box { /*inline*/
+            display: block;
+            border: 2px solid blue;
+            /*width: 100px;*/
+            /*height: 100px;*/
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">box</div>
+<span class="span-box">span box</span>
+</body>
+</html>
