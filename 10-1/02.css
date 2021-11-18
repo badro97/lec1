@@ -1,0 +1,37 @@
+:root {
+    --color1: #CCCCFF;
+    --color2: #5495ED;
+    --color3: #DE3163;
+    --color4: #FF7F50;
+    --color5: #FFBF00;
+    --color6: #9FE2BF;
+    --color7: #EEF33F;
+    --rotate: 0.5turn;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    width: 300px;
+    height: 500px;
+    background-color: var(--color1);
+}
+.wrapper .box {
+    width: 100px;
+    height: 100px;
+    font-size: 3em;
+    background-color: var(--color2);
+    color: #fff;
+    text-transform: uppercase;
+    transform: rotateX(60deg) rotateY(60deg) rotateZ(60deg);
+}
