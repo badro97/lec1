@@ -27,7 +27,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .wrap {position: relative;overflow-x: hidden;    width: 990px;height: 100%;min-height: 636px;margin: 0 auto;box-sizing: border-box;}
 #nav {float:left;width: 235px;height: 100%;background: #fff;}
 
-#nav .home {display: block;width: 127px;height: 127px;margin: 40px auto;font-size: 0;line-height: 0;background: url(./images/img_home.gif) 0 0 no-repeat;text-indent: -9999px;}
+#nav .home {display: block;width: 127px;height: 127px;margin: 40px auto;font-size: 0;line-height: 0;background: url(images/img_home.gif) 0 0 no-repeat;text-indent: -9999px;}
 #nav .gnb_menu {overflow: hidden;width: 125px;margin: 0 auto;}
 #nav .gnb_menu .link_menu{display: block;font-size : 18px;  font-weight: bold;}
 #nav .gnb_sub {display: block;overflow: hidden;margin: 15px 0;padding-left: 12px;border-left: 1px solid #676767;}
