@@ -4,8 +4,155 @@
     <meta charset="UTF-8">
     <title>Final</title>
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="cube.css">
 </head>
 <body>
+
+<header>
+    <div class="wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor">
+            <path id="star" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1}
+                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+        </svg>
+    </div>
+    <div class="user">
+        <img src="images/face.jpg" alt="">
+        <h3 class="name">이 승 훈</h3>
+        <p class="major">컴퓨터공학전공</p>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#whoami">Whoami</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#now">Now</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="stroke">
+        <svg width="326" height="112" viewBox="0 0 326 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.6777 107.5H21.1777V105V68.5352H42.125C53.7345 68.5352 63.0402 65.8576 69.6673 60.1342L69.6684 60.1333C76.3914 54.3201 79.625 46.1127 79.625 35.8887C79.625 26.0997 76.2817 18.0354 69.5013 11.951C62.761 5.86146 53.5727 2.96875 42.2617 2.96875H5.55273H3.05273V5.46875V105V107.5H5.55273H18.6777ZM95.3433 98.247L95.3493 98.2532C102.161 105.361 110.997 108.867 121.627 108.867C134.777 108.867 144.906 103.75 151.613 93.4436L152.866 91.5187L151.054 90.1076L143.329 84.092L141.349 82.5502L139.815 84.5358C137.674 87.3062 135.199 89.5035 132.391 91.1557C129.759 92.7039 126.438 93.5449 122.311 93.5449C116.697 93.5449 112.182 91.5873 108.575 87.6645C105.461 84.1961 103.57 79.7373 103.021 74.1406H150.475H152.975V71.6406V66.377C152.975 54.231 150.234 44.5035 144.389 37.56C138.503 30.567 130.276 27.168 120.055 27.168C113.681 27.168 107.742 28.9551 102.29 32.4912C96.865 35.9935 92.6525 40.8658 89.644 47.0282L89.6404 47.0356C86.6731 53.165 85.2207 60.0862 85.2207 67.7441V70.0684C85.2207 81.5966 88.5228 91.0805 95.3433 98.247ZM109.026 47.3747L109.032 47.3691L109.037 47.3635C112.026 44.138 115.645 42.5586 120.055 42.5586C124.716 42.5586 128.185 44.0929 130.748 47.0335L130.754 47.0395L130.759 47.0455C133.121 49.7206 134.671 53.5457 135.2 58.75H103.702C104.672 53.8168 106.49 50.0778 109.026 47.3747ZM184.83 13.125V10.625H182.33H169.684H167.184V13.125V28.5352H156.217H153.717V31.0352V40.8105V43.3105H156.217H167.184V86.6797C167.184 93.3195 168.698 98.8264 172.076 102.848C175.544 106.976 180.596 108.867 186.773 108.867C190.162 108.867 193.62 108.376 197.141 107.411L198.98 106.907V105V94.7461V91.6536L195.957 92.3016C193.465 92.8356 191.661 93.0664 190.465 93.0664C187.85 93.0664 186.647 92.4204 186.098 91.7801C185.388 90.9015 184.83 89.3378 184.83 86.6797V43.3105H196.139H198.639V40.8105V31.0352V28.5352H196.139H184.83V13.125ZM215.382 98.247L215.388 98.2532C222.2 105.361 231.036 108.867 241.666 108.867C254.816 108.867 264.945 103.75 271.652 93.4436L272.905 91.5187L271.093 90.1076L263.368 84.092L261.388 82.5502L259.854 84.5358C257.713 87.3062 255.239 89.5035 252.43 91.1557C249.798 92.7039 246.477 93.5449 242.35 93.5449C236.736 93.5449 232.221 91.5872 228.614 87.6642C225.5 84.1958 223.609 79.7372 223.061 74.1406H270.514H273.014V71.6406V66.377C273.014 54.231 270.273 44.5035 264.428 37.56C258.542 30.567 250.315 27.168 240.094 27.168C233.721 27.168 227.783 28.9545 222.332 32.4894C216.906 35.9918 212.692 40.8647 209.683 47.0282L209.68 47.0356C206.712 53.165 205.26 60.0862 205.26 67.7441V70.0684C205.26 81.5966 208.562 91.0805 215.382 98.247ZM229.065 47.3747L229.071 47.3691L229.076 47.3635C232.065 44.138 235.684 42.5586 240.094 42.5586C244.755 42.5586 248.224 44.0929 250.787 47.0335L250.793 47.0395L250.798 47.0455C253.16 49.7206 254.71 53.5457 255.239 58.75H223.741C224.711 53.8168 226.529 50.0778 229.065 47.3747ZM320.552 44.8488L323.463 45.334V42.3828V30.625V29.0799L322.081 28.3889C320.291 27.4941 317.963 27.168 315.357 27.168C309.298 27.168 304.168 29.0848 300.06 32.8378L300.015 30.9752L299.956 28.5352H297.516H285.211H282.711V31.0352V105V107.5H285.211H297.857H300.357V105V53.0182C301.656 50.1225 303.428 48.0524 305.629 46.6708C307.957 45.2101 310.949 44.4043 314.742 44.4043C316.858 44.4043 318.792 44.5555 320.552 44.8488ZM42.2617 52.8027H21.1777V18.7695H42.987C49.0383 18.901 53.5007 20.6019 56.6715 23.618C59.8371 26.6292 61.5 30.6743 61.5 36.0254C61.5 41.742 59.8112 45.7691 56.7385 48.508C53.6146 51.2473 48.9161 52.8027 42.2617 52.8027Z"
+                  stroke="black" stroke-width="5"/>
+        </svg>
+    </div>
+    <br>
+    <h1>Portfolio</h1><br><br><br>
+    <h3>컴퓨터공학/블록체인보안</h3><br>
+    <p>안녕하세요! 제주대학교 컴퓨터공학전공 3학년 이승훈입니다.<br><br>
+        블록체인/보안과 금융/회계 분야에 관심이 많으며 인공지능 분야 대학원 진학 or CPA 시험 준비/합격을 목표로 하고 있습니다.</p>
+    <form action="https://github.com/badro97" target="blank">
+        <button type="submit">GitHub 페이지</button>
+    </form>
+</section>
+
+<div class="cube">
+    <div class="dream">
+        <div class="front"><img src="images/PWC.png" alt=""></div>
+        <div class="back"><img src="images/KPMG.png" alt=""></div>
+        <div class="left"><img src="images/Deloitte.png" alt=""></div>
+        <div class="right"><img src="images/E&Y.png" alt=""></div>
+    </div>
+    <div class="skill">
+        <div class="front"><img src="images/python.png" alt=""></div>
+        <div class="back"><img src="images/c.png" alt=""></div>
+        <div class="left"><img src="images/html.png" alt=""></div>
+        <div class="right"><img src="images/css.png" alt=""></div>
+        <div class="bottom"><img src="images/django.png" alt=""></div>
+        <div class="top"><img src="images/ubuntu.png" alt=""></div>
+    </div>
+</div>
+
+<section class="whoami" id="whoami">
+    <h1 class="heading"><span>whoami</span></h1>
+    <div class="row">
+        <div class="info">
+            <h3><span> -- 본명 -- </span><br> 이승훈 </h3><br>
+            <h3><span> -- 출생 -- </span><br> 1997/12/05. 6:30AM </h3><br>
+            <h3><span> -- 신체 -- </span><br> 184cm, 92kg, RH+ 0형 </h3><br>
+            <h3><span> -- 가족 -- </span><br> 부모님, 여동생 </h3><br>
+            <h3><span> -- 학적 -- </span>
+                <li>낙생초등학교</li>
+                <li>판교중학교</li>
+                <li>효원고등학교</li>
+                <li>제주대학교</li>
+            </h3>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+    <h1 class="heading"><span>Portfolio</span></h1>
+    <div class="row">
+        <div class="info">
+            <table>
+                <tr>
+                    <th>제주창조경제혁신센터<br>django 해커톤</th>
+                    <th>2019 공학교육페스티벌(E2 FESTA)</th>
+                    <th>SFSU SW특공대</th>
+                    <th>FOUNDERS 3기<br>Dapp 해커톤</th>
+                </tr>
+                <tr>
+                    <td>최우수상</td>
+                    <td>해녀체험 VR 게임 제작<br>체험부스 운영</td>
+                    <td>4주 과정 수료</td>
+                    <td>우수수료생</td>
+                </tr>
+                <tr>
+                    <td>2019.3.27 ~ 6.1</td>
+                    <td>2019.11.26 ~ 11.27</td>
+                    <td>2019.12.29 ~ 2020.1.25</td>
+                    <td>2020.2.3 ~ 2.14</td>
+                </tr>
+                <tr>
+                    <img id="pic" src="images/djHackathon.jpg" alt="">
+                    <img id="pic" src="images/efesta.jpg" alt="">
+                    <img id="pic" src="images/SFSU.jpg" alt="">
+                    <img id="pic" src="images/FOUNDERS.jpg" alt="">
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="now" id="now">
+    <h1 class="heading"><span>Now</span></h1>
+    <h1><span>목표</span></h1>
+    <div class="cpa">
+        <p><span>공인회계사(CPA)시험 합격</span></p>
+        <p>삼일PWC, 삼정KPMG, 한영E&Y, 안진Deloitte</p>
+        <iframe width="415" height="350" src="https://www.youtube.com/embed/ENNAp5WlnG0" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>회계사
+        </iframe>
+    </div>
+    <div class="ai">
+        <ol><span>AI/DeepLearning, AR/VR/MR/XR</span></ol>
+        <ol>인공지능 대학원 -> Deepmind, OpenAi</ol>
+        <iframe width="415" height="350" src="https://www.youtube.com/embed/4b33NTAuF5E" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>딥러닝
+        </iframe>
+    </div>
+</section>
+
+<script>
+    function toggle(e) {
+        const target = e.target;
+        if (target.classList.contains('like')) {
+            target.classList.add('unlike');
+            target.classList.remove('like');
+        } else {
+            target.classList.add('like');
+            target.classList.remove('unlike');
+        }
+    }
+    document.querySelectorAll('#star')[0].addEventListener('click', toggle);
+</script>
 
 </body>
 </html>
